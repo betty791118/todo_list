@@ -1,0 +1,107 @@
+body{
+    background: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background-color: white ;
+    width: 300px;
+    margin: 100px auto;
+    padding: 10px 100px;
+    border-radius: 15px;
+
+}
+.todolist-title{
+    position: relative;
+    left: -10px;
+    font-size: 32px;
+}
+.inner-wrapper{
+    margin: 0 auto;
+    max-width: 400px;
+    width: 100%;
+
+}
+
+.input-wrapper{
+    background-color: #fbc2eb ;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+
+}
+
+.input-wrapper input{
+    background-color: transparent;
+    border: 0px;
+    flex: 1;
+    outline: none;
+    padding: 10px 10px;
+}
+
+.inner-wrapper button{
+    background-color: #8271a9;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    border: 0px;
+    border-radius: 15px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+.list{
+    list-style: none;
+    padding: 2px;
+}
+
+.list li{
+    vertical-align: middle;
+    font-size: 16px;
+    padding: 6px;
+    position: relative;
+    /* background-color: aqua; */
+}
+
+.list li.checked{
+    text-decoration: line-through;
+}
+
+.list li::before{
+    content:'';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('assets/unchecked.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 5px;
+    cursor: pointer;
+
+}
+
+.list li.checked::before{
+    background-image: url('assets/check.png');
+}
+
+.delete {
+
+    background-image: url('assets/cancel.png');
+    width: 20px;
+    height: 20px;
+    /* padding: 1px; */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    vertical-align: middle;
+    cursor: pointer;
+
+}
